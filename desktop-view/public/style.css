@@ -1,0 +1,1041 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* CSS STYLING OF THE APP */
+
+#app {
+    background-color: #edf0f1;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* NAVBAR STARTS */
+
+#nav {
+    background-color: white;
+}
+
+.header {
+    display: inline;
+}
+
+
+/* NAVBAR ENDS */
+
+
+/* LEFT CONTAINER STARTS */
+
+.sidebar {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+}
+
+.sidebar ul li {
+    font-size: larger;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    color: #404557;
+}
+
+.sidebar ul li:hover {
+    background-color: #e5f1f3;
+    border-right: 5px solid #007585;
+    font-weight: bold;
+}
+
+.sidebar ul li:checked {
+    background-color: #e5f1f3;
+    border-right: 5px solid #007585;
+}
+
+.side-navbar {
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn .b-icon.bi,
+.nav-link .b-icon.bi,
+.dropdown-toggle .b-icon.bi,
+.dropdown-item .b-icon.bi,
+.input-group-text .b-icon.bi {
+    font-size: 125%;
+    vertical-align: text-bottom;
+    display: inline !important;
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 31px;
+}
+
+.Item {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Item:focus {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    outline: none;
+}
+
+.Item .b-avatar .b-avatar-img img {
+    width: 80%;
+    height: 80%;
+    max-height: auto;
+    border-radius: inherit;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Item .item-title {
+    color: #6d6e75;
+    justify-items: center;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.Item .price {
+    color: #0a7a89;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.Item button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #ff7575 !important;
+}
+
+.Item button:focus {
+    border: none !important;
+    outline: none !important;
+    color: #ff7575 !important;
+}
+
+.Item .b-icon.bi {
+    color: #e5e9f2 !important;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+
+.Item .b-icon.bi:hover {
+    color: #ff7575 !important;
+    border: none;
+}
+
+.Item .b-icon.bi:focus {
+    color: #ff7575 !important;
+}
+
+.shrink-button {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+
+.shrink-button .b-icon.bi {
+    color: #e5e9f2 !important;
+    font-size: 17px;
+    background-color: #007585;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    padding: 3px 3px;
+}
+
+.shrink-button button {
+    background-color: #007585;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 9px;
+    left: -9px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+.shrink-button button:active {
+    background-color: #007585;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 9px;
+    left: 301px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+
+.shrink-button button:focus {
+    background-color: #007585;
+    position: absolute;
+    top: 9px;
+    left: -9px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    /* border: none;
+  outline: none; */
+}
+
+
+/* predefined-classes */
+
+.b-icon.bi {
+    color: #007585 !important;
+}
+
+.person .b-icon.bi {
+    color: white !important;
+}
+
+.btn .b-icon.bi,
+.nav-link .b-icon.bi,
+.dropdown-toggle .b-icon.bi,
+.dropdown-item .b-icon.bi,
+.input-group-text .b-icon.bi {
+    font-size: 125%;
+    vertical-align: text-bottom;
+    display: none;
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: transparent !important;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #70d18d !important;
+}
+
+.b-avatar .b-avatar-img img {
+    max-height: auto;
+    border-radius: inherit;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 1px solid #f1f3f7;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #007585 !important;
+    border-color: #007585 !important;
+    width: 50%;
+    border-radius: 8px;
+    align-content: center;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+
+/* Payment page css */
+
+.right-container .b-icon.bi {
+    color: #70d18d !important;
+    margin-top: 0px !important;
+}
+
+#footer {
+    background-color: #078697;
+    padding: 8px 10px;
+    position: sticky;
+    border-bottom-left-radius: 10px;
+}
+
+.shop {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #eef0f5;
+    text-align: left;
+    padding: 8px 12px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+.cardnumber {
+    border: 1px solid #dbd6d3;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+}
+
+.cardnumber::placeholder {
+    color: #cbcbcb;
+}
+
+.expiry {
+    color: #7e7f85;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.points {
+    display: flex;
+    font-size: small;
+}
+
+.discount {
+    font-size: 12px;
+}
+
+.redeem {
+    background: white;
+    color: #4095a2;
+    border: 1px solid #e4e1df;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.redeem:hover {
+    background: #4095a2;
+    color: white;
+}
+
+.left .price-total {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.right {
+    font-weight: bold;
+    padding: 0;
+    font-size: 25px;
+}
+
+.footer button {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.footer button:hover {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.footer button:focus {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.right-container {
+    background-color: white;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    width: 310px;
+    margin-left: 26px;
+}
+
+.right-container .title {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.right-container .cart-status {
+    color: #d1dfe3;
+    font-weight: bold;
+    margin-bottom: 136px;
+    margin-top: 10px;
+}
+
+.right-container .footer {
+    background-color: #078697 !important;
+    color: white;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    /* position: fixed;
+  
+  width: 100%;
+   */
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: none;
+    background-image: none;
+    width: 100%;
+    border: 2px solid #eef0f5;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    padding: 5px 5px;
+    color: #a3a3a3;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.select {
+    position: relative;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: none;
+    overflow: hidden;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0 1em;
+    pointer-events: none;
+    color: #007585;
+}
+
+.select::after {
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+}
+
+.cardnumber {
+    border: 1px solid #dbd6d3;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+}
+
+.cardnumber::placeholder {
+    color: #cbcbcb;
+}
+
+.expiry {
+    color: #7e7f85;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.payment-footer {
+    background-color: #078697 !important;
+    color: white;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.payment-footer button {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.payment-footer button:hover {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.payment-footer button:focus {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.payment-page {
+    padding: 0 10px;
+}
+
+
+/* SECOND DIV  CSS STARTS*/
+
+#main-container {
+    padding: 0 12px;
+}
+
+.cardnumber {
+    border: 1px solid #dbd6d3;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+}
+
+.cardnumber::placeholder {
+    color: #cbcbcb;
+    font-size: small;
+}
+
+.expiry {
+    color: #7e7f85;
+    font-size: small;
+    margin-top: 10px;
+}
+
+
+/* checkbox styling */
+
+
+/* checkbox style */
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container label {
+    cursor: pointer;
+    display: flex;
+    color: dimgrey;
+    font-size: 16px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-container label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3797a4;
+    border-radius: 0.15em;
+    margin-right: 11px;
+    margin-bottom: 0;
+}
+
+.checkbox-container input[type="checkbox"]:checked+label::before {
+    content: "\002714";
+    background-color: #3797a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+
+
+/* SECOND DIV  CSS ENDS*/
+
+
+/* THIRD DIV  CSS STARTS*/
+
+.congratulations {
+    color: rgb(44, 43, 43);
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.description {
+    color: rgb(44, 43, 43);
+    margin-bottom: 20px;
+}
+
+.schedule {
+    color: rgb(88, 86, 86);
+    text-align: left;
+}
+
+.bold-liner {
+    color: rgb(88, 86, 86);
+    font-weight: bold;
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.where-where {
+    color: rgb(88, 86, 86);
+    margin-top: 15px;
+}
+
+.where-heading {
+    color: rgb(88, 86, 86);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.where-para {
+    color: rgb(88, 86, 86);
+    font-size: 14px;
+}
+
+.help {
+    color: white;
+    font-size: medium;
+    padding: 8px 0;
+    font-weight: bold;
+    background-color: #078697;
+    margin-top: 126px;
+    border-bottom-left-radius: 10px;
+}
+
+.right-container .help .b-icon.bi {
+    color: white !important;
+    margin-top: 0px !important;
+}
+
+
+/* THIRD DIV  CSS ENDS*/
+
+
+/* YourOrder starts */
+
+.items {
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.item-display {
+    color: dimgrey;
+}
+
+.price {
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.order-details {
+    text-align: left;
+    font-size: 11px;
+}
+
+
+/* increment/ decrement button */
+
+.qtyBox {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #3797a4;
+    background-color: white;
+    color: #3797a4;
+    cursor: pointer;
+}
+
+.qtyBox:hover,
+.qtyBox:focus,
+.qtyBox:active {
+    color: white;
+    background-color: #3797a4;
+    border-radius: 50%;
+    outline: none;
+}
+
+.qtyBox__input {
+    border: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    padding: 4px 0;
+    text-align: center;
+    color: dimgrey;
+    font-size: 14px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.item-display .b-icon.bi {
+    color: #3797a4 !important;
+    margin-top: 0px !important;
+}
+
+
+/* YourOrder ends */
+
+
+/* emptycart starts */
+
+.empty .title {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.right-container .empty .b-icon.bi {
+    color: #e5f1f3 !important;
+    margin-top: 140px;
+}
+
+.empty .cart-status {
+    color: #d1dfe3;
+    font-weight: bold;
+    margin-bottom: 136px;
+    margin-top: 10px;
+}
+
+.empty .footer {
+    background-color: #078697 !important;
+    color: white;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    /* position: fixed;
+  
+  width: 100%;
+   */
+}
+
+
+/* emptycart ends */
+
+
+/* expand css */
+
+.category {
+    background: white;
+    width: 50%;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 50px;
+}
+
+
+/* TRANSITION */
+
+
+/* always present */
+
+.expand-transition {
+    transition: all 1s ease;
+}
+
+
+/* .expand-enter defines the starting state for entering */
+
+
+/* .expand-leave defines the ending state for leaving */
+
+.expand-enter,
+.expand-leave {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* MODAL POPUP CSS STARTS */
+
+.modal-heading {
+    color: #5b5c65;
+    font-weight: bold;
+}
+
+.modal-price {
+    color: #007585;
+    font-weight: bold;
+}
+
+.modal-heartfill {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.modal-heartfill:hover,
+.modal-heartfill:focus {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.modal-heartfill .b-icon.bi {
+    color: #ff7575 !important;
+}
+
+.modal-description {
+    color: #6a6b73;
+    font-size: 12px;
+}
+
+.modal-heading-option {
+    color: #5b5c65;
+    font-weight: bold;
+}
+
+
+/* radio checkbok styling starts*/
+
+.option-modal {
+    color: #47484b;
+    font-size: medium;
+    /* font-weight: bold; */
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+.option-modal input[type="radio"] {
+    display: none;
+}
+
+.option-modal label {
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.option-modal label::before {
+    content: "";
+    border: 2px solid #3797a4;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: -8px 6px;
+    margin-left: 0px;
+    border-radius: 50%;
+}
+
+.option-modal label::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: rgba(55, 151, 164, 0.014);
+    width: 16px;
+    height: 16px;
+    margin: -8px 20px;
+    margin-left: 0px;
+    border-radius: 50%;
+    left: 9px;
+    top: 18px;
+    transition: all 0.4s;
+}
+
+.option-modal input[type="radio"]:checked+label::after {
+    background: rgba(55, 151, 164, 1);
+}
+
+.option-modal input[type="radio"]:hover+label::after {
+    background: rgba(55, 151, 164, 1);
+}
+
+
+/* radio checkbok styling ends*/
+
+
+/* checkbox styling starts */
+
+.modal-checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.modal-checkbox-container label {
+    cursor: pointer;
+    display: flex;
+    color: #47484b;
+    font-size: 15px;
+}
+
+.modal-checkbox-container input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    display: hidden;
+}
+
+.modal-checkbox-container label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3797a4;
+    border-radius: 0.15em;
+    margin-right: 8px;
+    margin-left: 1.5em;
+    margin-bottom: 0;
+}
+
+.modal-checkbox-container input[type="checkbox"]:checked+label::before {
+    content: "\002714";
+    background-color: #3797a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+
+
+/* checkbox styling ends */
+
+
+/* quantity css styling starts */
+
+
+/* Radio button Css */
+
+
+/* button-group  */
+
+.radio {
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ed7976;
+}
+
+.radio__input {
+    display: none;
+}
+
+.radio__label {
+    padding: 2px 10px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: dimgrey;
+    cursor: pointer;
+    transition: background 0.1s;
+    font-weight: bold;
+}
+
+.radio__label:not(:last-of-type) {
+    border-right: 1px solid #ed7976;
+}
+
+.radio__input:checked+.radio__label {
+    background: rgb(250, 96, 96);
+    color: white;
+}
+
+.modal-qtyBox {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    margin-top: -1px;
+    margin-left: 1px;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid #097a89;
+    background-color: white;
+    color: #097a89;
+    cursor: pointer;
+}
+
+.modal-qtyBox:active,
+.modal-qtyBox:focus,
+.modal-qtyBox:hover {
+    color: white;
+    background-color: #3797a4;
+    border: none;
+    outline: none;
+}
+
+.modal-qtyBox__input {
+    border: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    padding: 8px 0;
+    text-align: center;
+    color: dimgrey;
+    font-size: 19px;
+    margin: 0 0px;
+    top: 1px;
+    left: 1px;
+    line-height: none !important;
+}
+
+.modal-footer {
+    background-color: #078697;
+    padding: 8px 10px;
+    position: sticky;
+    justify-content: center !important;
+}
+
+.modal-footer button {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.modal-footer button:hover,
+.modal-footer button:focus {
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+}
+
+
+/* quantity css styling ends */
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 !important;
+    border-radius: 10px;
+}
+
+
+/* MODAL POPUP CSS ENDS */
+
+hr {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
